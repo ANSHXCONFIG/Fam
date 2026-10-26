@@ -1,40 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#10182c">
-<title>FamUpiGateway — Payments for your business</title>
-<link rel="stylesheet" href="/styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f9ff">
+<meta name="description" content="FamUpiGateway developer-first payment workflow and merchant dashboard.">
+<title>FamUpiGateway — Payments, made simple</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<header class="nav"><a class="brand" href="/">✦ <span>FamUpi</span><b>Gateway</b></a><button id="menu" class="menu" aria-label="Open menu">☰</button><nav id="navlinks"><a href="#features">Features</a><a href="#plans">Plans</a><a href="#developers">Developers</a><a class="navbtn" href="/app.html">Merchant Login</a></nav></header>
+<div class="topline"><span class="pulse"></span> Developer-first payment infrastructure <span class="topsep">·</span> Sandbox mode available</div>
+<header class="nav"><a class="brand" href="/"><span class="brandmark">F</span><span>FamUpi<b>Gateway</b></span></a><button id="menu" class="menu" aria-label="Open menu">☰</button><nav id="navlinks"><a href="#features">Features</a><a href="#how">How it works</a><a href="#developers">Developers</a><a class="navlogin" href="/app.html">Sign in</a><a class="navbtn" href="/app.html">Open dashboard <span>↗</span></a></nav></header>
 <main>
-<section class="hero">
-<div class="eyebrow">⚡ PAYMENT INFRASTRUCTURE FOR INDIA</div>
-<div class="trust">◉ ◉ ◉ <strong>Built for modern businesses</strong></div>
-<h1>Accept UPI Payments.<br><span>Grow Your Business.</span></h1>
-<p>Create payment orders, track transactions and integrate checkout using a developer-friendly API. Start in sandbox mode, then connect an approved payment provider.</p>
-<div class="actions"><a class="primary" href="/app.html">Get Started →</a><a class="secondary" href="#developers">Explore API</a></div>
-<div class="notice">Demo interface · Real payments require an approved provider account and production configuration.</div>
-</section>
-<section id="features" class="features">
-<div class="sectionhead"><div class="eyebrow">BUILT FOR DEVELOPERS</div><h2>Everything in one workspace</h2></div>
-<div class="cards">
-<article><i>▦</i><h3>Merchant Dashboard</h3><p>Review payment counts, revenue and recent transaction activity.</p></article>
-<article><i>⌘</i><h3>Powerful APIs</h3><p>Create orders and check payment status using a secret server-side API key.</p></article>
-<article><i>↗</i><h3>Payment Links</h3><p>Plan a checkout flow for invoices and customer payment requests.</p></article>
-<article><i>♧</i><h3>Verified Webhooks</h3><p>Update order state only after validating the provider's signed webhook.</p></article>
-</div></section>
-<section id="plans" class="plans"><div class="eyebrow">SIMPLE TO START</div><h2>Plans for every stage</h2><div class="planrow"><article><h3>Sandbox</h3><h2>₹0</h2><p>Test API calls and UI flows</p><a href="/app.html">Open dashboard →</a></article><article class="highlight"><h3>Production</h3><h2>Custom</h2><p>Provider approval and compliance required</p><a href="#developers">Read integration notes →</a></article></div></section>
-<section id="developers" class="developers"><div><div class="eyebrow">DEVELOPER FIRST</div><h2>Integrate in minutes</h2><p>Keep secret keys on your backend. Never expose merchant API keys in browser JavaScript.</p></div><pre><code>POST /api/v1/orders
-X-API-Key: YOUR_SERVER_SIDE_KEY
-Content-Type: application/json
+<section class="hero"><div class="hero-copy"><div class="eyebrow"><span>✦</span> PAYMENTS THAT MOVE YOU FORWARD</div><h1>Payments made<br><span>simple.</span> Growth made<br>possible.</h1><p class="hero-lede">One clean workspace to create payment orders, manage API keys and follow your transaction flow — without the clutter.</p><div class="actions"><a class="primary" href="/app.html">Get started <span>→</span></a><a class="secondary" href="#developers"><span class="play">⌘</span> Explore the API</a></div><div class="hero-foot"><span class="check">✓</span> Developer-friendly APIs <span class="dot">·</span> <span class="check">✓</span> Sandbox-first setup</div><div class="safety-note">Demo platform. Live payments require an approved provider account and production credentials.</div></div>
+<div class="visual"><div class="orb orb1"></div><div class="orb orb2"></div><div class="float-tag tag-top"><span class="tag-icon">↗</span><span><b>Payment workflow</b><small>One place to manage</small></span></div><div class="dash-preview"><div class="preview-top"><div class="mini-brand"><span class="brandmark small">F</span> FamUpi <b>Gateway</b></div><span class="preview-dots">•••</span></div><div class="preview-greet"><div><small>MONDAY, OCTOBER 26</small><h3>Good morning 👋</h3><p>Here’s your business overview.</p></div><span class="mini-pill"><i></i> Sandbox</span></div><div class="preview-stats"><div><span>Total orders</span><b>1,284</b><small class="up">↗ 12.8%</small></div><div><span>Collected</span><b>₹84,520</b><small class="up">↗ 8.2%</small></div></div><div class="chart-card"><div class="chart-head"><span>Payment activity</span><small>Last 7 days⌄</small></div><div class="chart"><div class="chart-y"><span>₹8k</span><span>₹4k</span><span>₹0</span></div><svg viewBox="0 0 340 100" preserveAspectRatio="none" role="img" aria-label="Illustrative payment activity chart"><defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3567ef" stop-opacity=".22"/><stop offset="1" stop-color="#3567ef" stop-opacity="0"/></linearGradient></defs><path d="M0,76 C22,72 25,55 48,61 S80,82 100,52 S135,64 156,37 S192,51 213,30 S251,47 270,22 S314,33 340,8 L340,100 L0,100Z" fill="url(#fill)"/><path d="M0,76 C22,72 25,55 48,61 S80,82 100,52 S135,64 156,37 S192,51 213,30 S251,47 270,22 S314,33 340,8" fill="none" stroke="#3567ef" stroke-width="3" stroke-linecap="round"/></svg></div><div class="chart-x"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div><div class="preview-bottom"><span class="tiny-check">✓</span><span><b>Everything in sync</b><small>Manage your payment flow in one place</small></span><span class="arrow">↗</span></div></div><div class="float-tag tag-bottom"><span class="secure-icon">⌑</span><span><b>Built for developers</b><small>Clear APIs. Clean workflows.</small></span></div></div></section>
+<section class="proof"><div><b>One workspace</b><span>for your payment workflow</span></div><div><b>API-first</b><span>built for integration</span></div><div><b>Sandbox-ready</b><span>test before launch</span></div></section>
+<section id="features" class="features section"><div class="sectionhead"><div class="eyebrow">THE TOOLS YOU NEED</div><h2>Everything in one<br><span>clear workspace.</span></h2><p>Less complexity in your workflow. More clarity at every step.</p></div><div class="cards"><article><div class="feature-icon blue">▦</div><h3>Merchant dashboard</h3><p>Get a clear view of orders, activity and key account tools in one place.</p><a href="/app.html">Explore dashboard <span>→</span></a></article><article><div class="feature-icon violet">⌘</div><h3>Developer APIs</h3><p>Build server-side order flows with API keys and straightforward request patterns.</p><a href="#developers">Read API guide <span>→</span></a></article><article><div class="feature-icon mint">↗</div><h3>Payment workflows</h3><p>Organize order creation and status checks as your integration grows.</p><a href="#how">See how it works <span>→</span></a></article><article><div class="feature-icon amber">♧</div><h3>Webhook-ready</h3><p>Design for verified provider events instead of trusting a browser redirect.</p><a href="#developers">Integration notes <span>→</span></a></article></div></section>
+<section id="how" class="how section"><div class="how-copy"><div class="eyebrow">A SIMPLE START</div><h2>From first request<br>to a clearer workflow.</h2><p>Start with a test environment, verify each step, and only move to production after your payment provider approves your account.</p><a class="primary" href="/app.html">Open merchant workspace →</a></div><div class="steps"><article><span>01</span><div><h3>Create your workspace</h3><p>Sign up and manage your merchant account securely.</p></div><b>✓</b></article><article><span>02</span><div><h3>Generate an API key</h3><p>Keep the key private and use it from your backend.</p></div><b>⌘</b></article><article><span>03</span><div><h3>Test an order</h3><p>Send a test request and verify the server response.</p></div><b>↗</b></article></div></section>
+<section id="developers" class="developers section"><div><div class="eyebrow">MADE FOR BUILDERS</div><h2>Start with one<br><span>API request.</span></h2><p>Keep your secret keys on the server. Test in sandbox before configuring a live payment provider.</p><a class="textlink" href="/app.html">Open API quick start →</a></div><div class="codebox"><div class="code-top"><div><i></i><i></i><i></i></div><span>create-order.json</span><button id="copycode" type="button">Copy example</button></div><pre><code><span class="code-purple">POST</span> /api/v1/orders
+<span class="code-blue">X-API-Key:</span> YOUR_SERVER_SIDE_KEY
+<span class="code-blue">Content-Type:</span> application/json
 
 {
-  "amount": 100.00,
-  "order_id": "ORDER-123",
-  "customer_name": "Test Customer"
-}</code></pre></section>
-</main><footer>© 2026 FamUpiGateway Starter · Independent demo project; not affiliated with FamPay.</footer>
-<script src="/site.js"></script>
-</body></html>
+  <span class="code-green">"amount"</span>: 100,
+  <span class="code-green">"order_id"</span>: <span class="code-yellow">"ORDER-123"</span>,
+  <span class="code-green">"customer_name"</span>: <span class="code-yellow">"Test Customer"</span>
+}</code></pre><div class="code-foot"><span>●</span> Example request · INR amount</div></div></section>
+<section class="cta"><div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Make your next payment workflow simpler.</h2><p>Open your workspace and continue building in sandbox mode.</p></div><a href="/app.html" class="primary">Go to dashboard <span>→</span></a></section>
+</main><footer><a class="brand" href="/"><span class="brandmark small">F</span><span>FamUpi<b>Gateway</b></span></a><span>© 2026 FamUpiGateway · Independent demo project, not affiliated with FamPay.</span><a href="/app.html">Merchant workspace ↗</a></footer><script src="/site.js"></script></body></html>
