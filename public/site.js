@@ -1,0 +1,1 @@
+document.getElementById("menu")?.addEventListener("click",()=>document.getElementById("navlinks")?.classList.toggle("open"));

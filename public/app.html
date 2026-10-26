@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Merchant Dashboard — FamUpiGateway</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/app.css"></head>
+<body class="appbody"><header class="appnav"><a class="brand" href="/">✦ <span>FamUpi</span><b>Gateway</b></a><span>MERCHANT WORKSPACE</span></header>
+<div class="appwrap"><aside class="sidebar"><div class="sidecap">WORKSPACE</div><a class="active" href="#dashboard">▦ Dashboard</a><a href="#transactions">⇄ Transactions</a><a href="#api">⌘ API Keys</a><a href="#docs">▤ Documentation</a><a href="/">↖ Public website</a></aside>
+<main class="dash" id="dashboard"><div class="welcome"><div><div class="eyebrow">MERCHANT CONSOLE</div><h1>Welcome to your workspace 👋</h1><p>Test the interface now; configure provider credentials before processing real payments.</p></div><span class="status">● Sandbox-ready</span></div>
+<div class="stats"><article><small>TOTAL REQUESTS</small><strong id="total">0</strong></article><article><small>SUCCESSFUL</small><strong id="success">0</strong></article><article><small>FAILED / PENDING</small><strong id="failed">0</strong></article><article><small>TOTAL REVENUE</small><strong id="revenue">₹0.00</strong></article></div>
+<section class="panel" id="auth"><h2>Merchant sign in / create account</h2><p class="muted">Create a merchant account to use protected dashboard endpoints.</p><div class="formgrid"><label>Business name<input id="name" placeholder="Your business"></label><label>Email<input id="email" type="email" placeholder="you@example.com"></label><label>Password (12+ characters)<input id="password" type="password" minlength="12" placeholder="Use a strong password"></label></div><div class="btnrow"><button id="signup">Create account</button><button id="login" class="secondarybtn">Sign in</button><button id="refresh" class="secondarybtn">Refresh dashboard</button></div><p id="authmsg" role="status"></p></section>
+<section class="panel" id="api"><h2>API key management</h2><p class="muted">Keys are shown only once. Keep them on your server, never in frontend code.</p><button id="newkey">Generate API key</button><pre id="keyout" class="hidden"></pre></section>
+<section class="panel" id="transactions"><h2>Recent transactions</h2><div id="txlist" class="muted">Sign in and refresh to load transactions.</div></section>
+<section class="panel" id="docs"><h2>API quick start</h2><p class="muted">Call this endpoint from your own backend, not from a public browser.</p><pre>POST /api/v1/orders
+X-API-Key: fup_live_... (server-side only)
+Content-Type: application/json
+
+{
+  "amount": 100,
+  "order_id": "ORDER-123",
+  "customer_name": "Test Customer"
+}</pre><p class="muted">Production checkout UI, refunds, reconciliation, dispute handling and compliance checks must be completed before going live.</p></section>
+</main></div><script src="/app.js"></script></body></html>

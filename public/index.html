@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10182c">
+<title>FamUpiGateway — Payments for your business</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="/">✦ <span>FamUpi</span><b>Gateway</b></a><button id="menu" class="menu" aria-label="Open menu">☰</button><nav id="navlinks"><a href="#features">Features</a><a href="#plans">Plans</a><a href="#developers">Developers</a><a class="navbtn" href="/app.html">Merchant Login</a></nav></header>
+<main>
+<section class="hero">
+<div class="eyebrow">⚡ PAYMENT INFRASTRUCTURE FOR INDIA</div>
+<div class="trust">◉ ◉ ◉ <strong>Built for modern businesses</strong></div>
+<h1>Accept UPI Payments.<br><span>Grow Your Business.</span></h1>
+<p>Create payment orders, track transactions and integrate checkout using a developer-friendly API. Start in sandbox mode, then connect an approved payment provider.</p>
+<div class="actions"><a class="primary" href="/app.html">Get Started →</a><a class="secondary" href="#developers">Explore API</a></div>
+<div class="notice">Demo interface · Real payments require an approved provider account and production configuration.</div>
+</section>
+<section id="features" class="features">
+<div class="sectionhead"><div class="eyebrow">BUILT FOR DEVELOPERS</div><h2>Everything in one workspace</h2></div>
+<div class="cards">
+<article><i>▦</i><h3>Merchant Dashboard</h3><p>Review payment counts, revenue and recent transaction activity.</p></article>
+<article><i>⌘</i><h3>Powerful APIs</h3><p>Create orders and check payment status using a secret server-side API key.</p></article>
+<article><i>↗</i><h3>Payment Links</h3><p>Plan a checkout flow for invoices and customer payment requests.</p></article>
+<article><i>♧</i><h3>Verified Webhooks</h3><p>Update order state only after validating the provider's signed webhook.</p></article>
+</div></section>
+<section id="plans" class="plans"><div class="eyebrow">SIMPLE TO START</div><h2>Plans for every stage</h2><div class="planrow"><article><h3>Sandbox</h3><h2>₹0</h2><p>Test API calls and UI flows</p><a href="/app.html">Open dashboard →</a></article><article class="highlight"><h3>Production</h3><h2>Custom</h2><p>Provider approval and compliance required</p><a href="#developers">Read integration notes →</a></article></div></section>
+<section id="developers" class="developers"><div><div class="eyebrow">DEVELOPER FIRST</div><h2>Integrate in minutes</h2><p>Keep secret keys on your backend. Never expose merchant API keys in browser JavaScript.</p></div><pre><code>POST /api/v1/orders
+X-API-Key: YOUR_SERVER_SIDE_KEY
+Content-Type: application/json
+
+{
+  "amount": 100.00,
+  "order_id": "ORDER-123",
+  "customer_name": "Test Customer"
+}</code></pre></section>
+</main><footer>© 2026 FamUpiGateway Starter · Independent demo project; not affiliated with FamPay.</footer>
+<script src="/site.js"></script>
+</body></html>
